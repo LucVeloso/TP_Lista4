@@ -44,7 +44,7 @@ void apagarEnd(map<string, string> &catalogo){
         it = catalogo.find(resp);
         if(it != catalogo.end()){ catalogo.erase(it); op++; break;}
 
-        it = find(catalogo.begin(), catalogo.end(), resp);
+        it = find_if(catalogo.begin(), catalogo.end(), [resp] (pair <string, string> eu) {return eu.second == resp;});
         if(it != catalogo.end()){ catalogo.erase(it); op++; break;}
         
         else{
@@ -62,7 +62,7 @@ void operacoes(map<string, string> &catalogo){
     int resp = 0;
 
     do{
-        system("CLS");
+        system("clear");
         cout << "0 - Sair" << endl;
         cout << "1 - Cadastrar novo endereço" << endl;
         cout << "2 - Consultar endereço" << endl;
@@ -83,18 +83,15 @@ void operacoes(map<string, string> &catalogo){
 
             case 1:
                 cadastro(catalogo);
-                system("pause");
             break;
 
             case 2:
                 mostrarEnd(catalogo);
-                system("pause");
             break;
 
             case 3: 
                 mostrarEnd(catalogo);
                 apagarEnd(catalogo);
-                system("pause");
             break;
         }
     }while(resp != 0);
