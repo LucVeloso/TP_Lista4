@@ -1,24 +1,8 @@
 #include <iostream>
 #include <map>
-#include <algorithm>
+#include "listaTelefonica.h"
 
 using namespace std;
-
-void cadastro(map<string, string> &t, string n){
-
-    string numero;
-
-    cout << "Informe o numero de " << n <<": ";
-    cin >> numero;
-
-    t[n] = numero;
-}
-
-bool procurarNome(map<string, string> t, string n){
-
-    if(t.find(n) != t.end()) return true;
-    else return false;
-}
 
 int main(){
     
