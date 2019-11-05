@@ -1,0 +1,1 @@
+Bem-vindos ao gerador de palavras aleatórias em português, com ele pode criar palavras à sorte para fazer jogos tipo Pictionary. Por exemplo, uma pessoa pode gerar uma palavra sem que outras pessoas a vejam, faz um desenho e as outras pessoas têm que adivinhar qual é a palavra. Também pode servir para fazer exercícios de criatividade, memorização, ou o que queiras.
